@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB Bán Hàng</title>
+
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/style.min.css">
+
+    <!-- Font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:wght@200;300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+
+<body class="position-relative">
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <h1>TH Shop</h1>
+                <div class="search">
+                    <input type="text" placeholder="Tìm kiếm ">
+                </div>
+
+                <button class="btn-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="shopping">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+                <button class="user">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+            </div>
+
+            <div class="nav-bar">
+                <a href="#">Điện Thoại</a>
+                <a href="#">Laptop</a>
+                <a href="#">Phụ Kiện</a>
+                <a href="#">Tai Nghe</a>
+                <a href="#">Đồng Hồ</a>
+                <a href="#">Máy Tính PC</a>
+                <a href="#">Tablet</a>
+            </div>
+        </div>
+    </header>
+    <section class="carousel">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img
+                        src="https://cdn2.cellphones.com.vn/690x300,webp,q100/https://dashboard.cellphones.com.vn/storage/mac-air-m2-sliding-th12.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img
+                        src="https://cdn2.cellphones.com.vn/690x300,webp,q100/https://dashboard.cellphones.com.vn/storage/tab-s8-wifi-sliding-14190.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img
+                        src="https://cdn2.cellphones.com.vn/690x300,webp,q100/https://dashboard.cellphones.com.vn/storage/60-year-marshall-slide.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img
+                        src="https://cdn2.cellphones.com.vn/690x300,webp,q100/https://dashboard.cellphones.com.vn/storage/bespoke%20jet.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img
+                        src="https://cdn2.cellphones.com.vn/690x300,webp,q100/https://dashboard.cellphones.com.vn/storage/nubia-6r-sliding-th12.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img
+                        src="https://cdn2.cellphones.com.vn/690x300,webp,q100/https://dashboard.cellphones.com.vn/storage/RightBanner_690x300_ASUS-VIVOBOOK.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img
+                        src="https://cdn2.cellphones.com.vn/690x300,webp,q100/https://dashboard.cellphones.com.vn/storage/hang-cu-sliding.png" />
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="polyci">
+        <div class="container">
+            <div class="row">
+                <div class="item col-3">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Mẫu mã đa dạng, chính hãng</p>
+                </div>
+                <div class="item col-3">
+                    <i class="fas fa-truck"></i>
+                    <p>Giao hàng toàn quốc</p>
+                </div>
+                <div class="item col-3">
+                    <i class="fas fa-shield-alt"></i>
+                    <p>Bảo hành có cam kết tới 12 tháng</p>
+                </div>
+                <div class="item col-3">
+                    <i class="fas fa-redo"></i>
+                    <p>Có thể đổi lại tại TH Shop</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- bán chạy -->
+    <section class="hot-sale">
+        <div class="container">
+            <div class="hot-sale-btn">
+                <button class="btn btn-secondary">Top bán chạy</button>
+            </div>
+
+            <div class="slide">
+                <div class="swiper mySwiper-hot-sale">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/v/_/v_ng_20.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>iPhone 14 pro max 256G</h3>
+                                    <p>34.900.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/i/p/ipad-2022-hero-silver-wifi-select.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>iPad Gen 10 10.9 inch 2022 Wifi 64GB</h3>
+                                    <p>11.290.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/t/a/tai-nghe-bluetooth.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Tai nghe không dây Havit TW 967</h3>
+                                    <p>250.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/m/i/mi_watch_base.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Đồng hồ thông minh Xiaomi Mi Watch</h3>
+                                    <p>1.990.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/1/s/1sdcsc.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Realme C35 4GB 64GB</h3>
+                                    <p>3.900.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/d/c/dcd_1.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Smart TV Coocaa HD 32 inch WIFI 32S3U</h3>
+                                    <p>2.900.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/1/_/1_252.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Iphone 11 256G</h3>
+                                    <p>11.190.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- điện thoai -->
+    <section class="product">
+        <div class="container">
+            <div class="product-header">
+                <button class="btn btn-secondary">Điện thoại</button>
+                <div class="brand">
+                    <a href="#">Apple</a>
+                    <a href="#">Samsung</a>
+                    <a href="#">Xiaomi</a>
+                    <a href="#">Oppo</a>
+                    <button class="show">Xem tất cả
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="slide">
+                <div class="swiper mySwiper-hot-sale">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/t/_/t_m_18.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>iPhone 14 Pro Max 128GB</h3>
+                                    <p>32.790.000</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/s/m/sm-s908_galaxys22ultra_front_burgundy_211119.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Samsung Galaxy S22 Ultra</h3>
+                                    <p>23.050.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/x/i/xiaomi-12t-den_1.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Xiaomi 12T</h3>
+                                    <p>10.790.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/c/o/combo_product_-_reno8_4g_-_gold.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>OPPO Reno8</h3>
+                                    <p>8.390.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/p/h/photo_2022-09-28_21-58-51.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>iPhone 14 128GB</h3>
+                                    <p>20.990.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/s/a/samsung_galaxy_z_flip_m_i_2022-1_1.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Samsung Galaxy Z Flip4 128GB</h3>
+                                    <p>20.590.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/1/1/11-pro-plus-blue.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Xiaomi Redmi Note 11 Pro Plus 5G</h3>
+                                    <p>8.890.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- laptop -->
+    <section class="product">
+        <div class="container">
+            <div class="product-header">
+                <button class="btn btn-secondary">Laptop</button>
+                <div class="brand">
+                    <a href="#">MacBook</a>
+                    <a href="#">Acer</a>
+                    <a href="#">Asus</a>
+                    <a href="#">Hp</a>
+                    <button class="show">Xem tất cả
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="slide">
+                <div class="swiper mySwiper-hot-sale">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/m/a/macbook_air_22.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Apple MacBook Air M1 256GB 2020</h3>
+                                    <p>22.490.000</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/m/a/macbook_air_m2.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Apple Macbook Air M2 2022 8GB 256GB</h3>
+                                    <p>27.590.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/3/0/30_2_43.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Laptop HP Pavilion Aero 13-BE0229AU 64U91PA</h3>
+                                    <p>16.990.000</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/t/e/text_ng_n_7.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Laptop Gaming Acer Nitro 5 Eagle AN515-57-54MV NH.QENSV.003</h3>
+                                    <p>21.690.00đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/5/h/5h53.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Laptop ASUS TUF Gaming F15 FX506HC-HN144W</h3>
+                                    <p>20.490.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/6/_/6_26_80.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Laptop Asus Zenbook 14 UX3402ZA-KM219W</h3>
+                                    <p>24.990.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/t/e/text_d_i_1__4.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Laptop Gaming Acer Nitro 5 AN515 45 R6EV</h3>
+                                    <p>18.990.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- đồng hồ -->
+    <section class="product">
+        <div class="container">
+            <div class="product-header">
+                <button class="btn btn-secondary">Đồng hồ</button>
+                <div class="brand">
+                    <a href="#">Apple</a>
+                    <a href="#">Samsung</a>
+                    <a href="#">Xiaomi</a>
+                    <a href="#">Huawei</a>
+                    <button class="show">Xem tất cả
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="slide">
+                <div class="swiper mySwiper-hot-sale">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/w/a/watch-lte-44_1.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Samsung Galaxy Watch5</h3>
+                                    <p>6.090.000</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/1/_/1_258.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Apple Watch SE 2022 40mm</h3>
+                                    <p>6.590.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/1/_/1_280.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Apple Watch SE 40mm (GPS) Viền Nhôm - Dây Cao Su</h3>
+                                    <p>5.990.000</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/w/a/watch_3_leather.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Đồng hồ thông minh Huawei Watch GT3 dây da</h3>
+                                    <p>4.990.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/m/i/mi_watch_base.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Đồng hồ thông minh Xiaomi Mi Watch</h3>
+                                    <p>1.990.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/s/a/samsung-galaxy-watch-4-classic-46mm.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Samsung Galaxy Watch4 Classic 46mm</h3>
+                                    <p>3.990.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/w/a/watch-gt-3-pro.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Đồng hồ thông minh Huawei Watch GT3 Pro dây silicone</h3>
+                                    <p>7.490.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Phụ kiện -->
+    <section class="product">
+        <div class="container">
+            <div class="product-header">
+                <button class="btn btn-secondary">Phụ kiện</button>
+                <div class="brand">
+                    <a href="#">Dán màn hình</a>
+                    <a href="#">Ốp lưng</a>
+                    <a href="#">Pin dự phòng</a>
+                    <a href="#">Cáp sạc</a>
+                    <button class="show">Xem tất cả
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="slide">
+                <div class="swiper mySwiper-hot-sale">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/d/a/dan-man-hinh-ppf-iphone-13-pro-full-vien-mat-sau_1.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Miếng dán PPF nhám Full viền mặt sau iPhone 13 Pro Max</h3>
+                                    <p>120.000</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/1/1/11-b_1_1.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Dán chống va đập KingKong cho iPhone 11 Pro</h3>
+                                    <p>250.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/_/i/_iphone_se2_iphone_xs_.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Ốp lưng chống sốc cho iPhone 7/8 Plus K Armor Shield</h3>
+                                    <p>200.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/c/h/chong_soc_12_34785db8c5df45f99e4.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Ốp lưng Iphone 12/12 Pro KST Trong Suốt</h3>
+                                    <p>36.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/p/i/pin-sac-du-phong-xiaomi-redmi-20000mah-sac-nhanh-18w-ts.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Pin sạc dự phòng Xiaomi Redmi 20000mAh sạc nhanh 18W</h3>
+                                    <p>550.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/9/3/93_2.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Pin sạc dự phòng Energizer 20.000mAh UE20012PQ</h3>
+                                    <p>690.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/f/r/frame_1_5__3.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Củ sạc Samsung 25W kèm cáp Type-C to Type-C</h3>
+                                    <p>450.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/g/r/group_117_1.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Sạc nhanh 20W Apple MHJE3ZA</h3>
+                                    <p>550.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- tai nghe -->
+    <section class="product">
+        <div class="container">
+            <div class="product-header">
+                <button class="btn btn-secondary">Tai nghe</button>
+                <div class="brand">
+                    <a href="#">Apple</a>
+                    <a href="#">Samsung</a>
+                    <a href="#">Xiaomi</a>
+                    <a href="#">Huawei</a>
+                    <button class="show">Xem tất cả
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="slide">
+                <div class="swiper mySwiper-hot-sale">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/g/r/group_169_2.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Tai nghe Bluetooth Apple AirPods 2 VN/A</h3>
+                                    <p>2.590.000</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/g/r/group_111_5_.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Tai nghe Bluetooth Apple AirPods Pro 2022</h3>
+                                    <p>6.290.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/g/r/group_182_1.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Tai nghe không dây Samsung Galaxy Buds Pro</h3>
+                                    <p>1.990.000</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/g/r/group_182_1__1.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Tai nghe không dây Samsung Galaxy Buds Live</h3>
+                                    <p>1.490.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/t/a/tai-nghe-khong-day-xiaomi-redmi-buds-3-lite.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Tai nghe không dây Xiaomi Redmi Buds 3 lite</h3>
+                                    <p>450.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/r/e/redmi-buds3.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Tai nghe không dây Xiaomi Redmi Buds 3</h3>
+                                    <p>790.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/h/u/huawei_1_1.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Tai nghe không dây Huawei Freebuds Pro 2</h3>
+                                    <p>3.990.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/f/r/freebuds-4i_2.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Tai nghe không dây Huawei Freebuds 4i</h3>
+                                    <p>1.190.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- iPad -->
+    <section class="product">
+        <div class="container">
+            <div class="product-header">
+                <button class="btn btn-secondary">Tablet</button>
+                <div class="brand">
+                    <a href="#">Apple</a>
+                    <a href="#">Samsung</a>
+                    <a href="#">Xiaomi</a>
+                    <a href="#">Huawei</a>
+                    <button class="show">Xem tất cả
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="slide">
+                <div class="swiper mySwiper-hot-sale">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/x/_/x_mmas.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>iPad 10.2 2021 WiFi 64GB</h3>
+                                    <p>7.690.000</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/i/p/ipad-2022-hero-silver-wifi-select.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>iPad Gen 10 10.9 inch 2022 Wifi 64GB</h3>
+                                    <p>11.290.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/t/a/tab_s8_ultra.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Samsung Galaxy Tab S8 Ultra 5G</h3>
+                                    <p>28.990.000</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/t/a/tab_s8_2.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Samsung Galaxy Tab S8 WIFI</h3>
+                                    <p>13.190.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/o/1/o1cn01ijop4f1slqk1fdzto_-2201438992231_1628774717.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Xiaomi Pad 5</h3>
+                                    <p>7.990.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/1/w/1w2kuj.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Redmi Pad 3GB 64GB</h3>
+                                    <p>5.790.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/h/u/huawei-matepad-bah4-l09-mategrey_1.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Máy Tính Bảng Huawei Matepad 2022 4GB 128GB</h3>
+                                    <p>5.990.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/h/w/hww.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Huawei MatePad SE 10.4</h3>
+                                    <p>5.490.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- PC -->
+    <section class="product">
+        <div class="container">
+            <div class="product-header">
+                <button class="btn btn-secondary">Máy tính PC</button>
+                <div class="brand">
+                    <a href="#">PC Ráp Sẵn</a>
+                    <a href="#">Linh Kiện Máy Tính</a>
+                    <a href="#">Máy Tính All In One</a>
+                    <a href="#">Máy Tính Đồng Bộ</a>
+                    <button class="show">Xem tất cả
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="slide">
+                <div class="swiper mySwiper-hot-sale">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/250x/media/catalog/product//g/r/group_125_2.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>PC Gaming CPS 013</h3>
+                                    <p>12.860.000đ </p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/250x/media/catalog/product//p/c/pc_gaming_001_2_.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>PC Gaming CPS 001</h3>
+                                    <p>8.080.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/8/_/8.32.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Card màn hình Gigabyte Geforce RTX 3060 Gaming OC 12GB</h3>
+                                    <p>9.190.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/5/_/5.1_l_i.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>RAM Laptop Kingston 1.2V 8GB 3200MHz KVR32S22S8/8</h3>
+                                    <p>710.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/g/r/group_160.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>PC Gaming Asus Rog Strix GA35 G35DX-VN003W</h3>
+                                    <p>42.490.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/g/r/group_172.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>PC Gaming Lenovo IdeaCentre G5 14IMB05-90N900H8VM</h3>
+                                    <p>15.390.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/g/r/group_179_4.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Máy tính để bàn All In One Asus A5401WRAT</h3>
+                                    <p>18.990.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <a href="#">
+                                        <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/g/r/group_182.png"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Máy tính văn phòng All In One văn phòng Asus V241EAT-BA057W</h3>
+                                    <p>16.690.000đ</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="buy btn btn-light"> Mua ngay </button>
+                                    <button class="shopping-cart btn btn-light">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 fTLinks">
+                    <div class="ft-head">
+                        <h4>
+                            GIỚI THIỆU THNS
+                        </h4>
+                    </div>
+                    <div class="ft-ct">
+                        <ul class="notStyle ulLinks">
+
+                            <li>
+                                <a href="/pages/gioi-thieu"><span>Về chúng tôi</span></a>
+                            </li>
+
+                            <li>
+                                <a href="http://m.me/tinhocngoisaolon" rel="nofollow"><span>Tư vấn mua hàng</span></a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.topcv.vn/cong-ty/cong-ty-tnhh-tin-hoc-ngoi-sao-lon/20654.html"
+                                    rel="nofollow"><span>Tuyển dụng</span></a>
+                            </li>
+
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 fTLinks">
+                    <div class="ft-head">
+                        <h4>
+                            CHÍNH SÁCH CHUNG
+                        </h4>
+                    </div>
+                    <div class="ft-ct">
+                        <ul class="notStyle ulLinks">
+
+                            <li>
+                                <a href="/pages/tra-gop"><span>Chính sách trả góp</span></a>
+                            </li>
+
+                            <li>
+                                <a href="/pages/chinh-sach-bao-mat"><span>Chính sách bảo mật</span></a>
+                            </li>
+
+                            <li>
+                                <a href="/pages/chinh-sach-giai-quyet-khieu-nai"><span>Chính sách giải quyết khiếu
+                                        nại</span></a>
+                            </li>
+
+                            <li>
+                                <a href="/pages/chinh-sach-bao-ve-thong-tin-ca-nhan"><span>Chính sách bảo vệ thông tin
+                                        cá nhân</span></a>
+                            </li>
+
+                            <li>
+                                <a href="/pages/bao-hanh"><span>Chính sách bảo hành</span></a>
+                            </li>
+
+                            <li>
+                                <a href="/pages/chinh-sach-doi-tra"><span>Chính sách đổi - trả hàng</span></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 fTLinks">
+                    <div class="ft-head">
+                        <h4>
+                            THÔNG TIN KHUYẾN MÃI
+                        </h4>
+                    </div>
+                    <div class="ft-ct">
+                        <ul class="notStyle ulLinks">
+
+                            <li>
+                                <a href="/blogs/tong-hop-khuyen-mai"><span>Tổng hợp khuyến mãi</span></a>
+                            </li>
+
+                            <li>
+                                <a href="https://beta.tinhocngoisao.com/pages/he-ruc-chay-sale-cham-day"
+                                    rel="nofollow"><span>VGA Giảm Sâu</span></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 fTLinks">
+                    <div class="ft-head">
+                        <h4>
+                            HỖ TRỢ KHÁCH HÀNG
+                        </h4>
+                    </div>
+                    <div class="ft-ct">
+                        <ul class="notStyle ulLinks hidden-xs">
+
+                            <li>
+                                <a href="/pages/thong-tin-lien-he"><span>Tổng hợp Hotline CSKH, phản ánh.</span></a>
+                            </li>
+
+                            <li>
+                                <a href="/pages/thanh-toan-tai-khoan"><span>Thông tin thanh toán</span></a>
+                            </li>
+
+                            <li>
+                                <a href="https://icafe.tinhocngoisao.com/" rel="nofollow"><span>Lắp đặt phòng
+                                        net</span></a>
+                            </li>
+
+                            <li>
+                                <a href="https://traucay.vn/" rel="nofollow"><span>Thiết bị Mining</span></a>
+                            </li>
+
+                        </ul>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+</body>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
+</script>
+
+<!-- swiper hot sale -->
+<script>
+    var swiper = new Swiper(".mySwiper-hot-sale", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        slidesPerGroup: 4,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+
+</html>
