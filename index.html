@@ -262,7 +262,7 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
-            
+
         </div>
     </section>
     <!-- điện thoai -->
@@ -275,7 +275,7 @@
                     <a href="#">Samsung</a>
                     <a href="#">Xiaomi</a>
                     <a href="#">Oppo</a>
-                    <button class="show" id="showMobile">Xem tất cả
+                    <button class="show" id="showMobile" onclick="renderMobile()">Xem tất cả
                         <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
@@ -420,7 +420,7 @@
                 </div>
             </div>
 
-            <div class="show-mobile"></div>
+            <div id="show-mobile"></div>
 
         </div>
     </section>
@@ -1465,7 +1465,7 @@
                             </li>
 
                         </ul>
-                        
+
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12 fTLinks">
@@ -1554,10 +1554,10 @@
                             </li>
 
                         </ul>
-                        
+
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </footer>
@@ -1601,7 +1601,12 @@
         },
     });
 </script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.0/axios.min.js"
+    integrity="sha512-OdkysyYNjK4CZHgB+dkw9xQp66hZ9TLqmS2vXaBrftfyJeduVhyy1cOfoxiKdi4/bfgpco6REu6Rb+V2oVIRWg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./service/mobile.js"></script>
+<script src="./model/mobile.js"></script>
 <script src="./js/main.js"></script>
 
 </html>
