@@ -10,14 +10,15 @@ async function fetchProductList() {
   try {
     var data = await promise;
     productList = data.data;
-    renderProductsList();
   } catch {
     alert("Không có dữ liệu");
   }
+  
 }
 fetchProductList();
 
 function renderProductsList(data) {
+  
   data = data || productList;
 
   var html = "";
@@ -43,22 +44,6 @@ function renderProductsList(data) {
   }
   document.getElementById("show-products").innerHTML = html;
 }
-
-// call
-async function fetchProductList() {
-  productList = [];
-
-  var promise = productsService.fetchProduct();
-
-  try {
-    var data = await promise;
-    productList = data.data;
-    renderMobileList();
-  } catch {
-    alert("Không có dữ liệu");
-  }
-}
-fetchProductList();
 
 function renderMobileList(data) {
   data = data || productList;
