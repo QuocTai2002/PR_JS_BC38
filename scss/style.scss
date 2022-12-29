@@ -5,6 +5,25 @@
     font-family: 'Chivo Mono', monospace;
 }
 
+.img {
+    display: block;
+    width: 100%;
+}
+
+.spacing-btn {
+    padding: 0 auto;
+    width: 100%;
+}
+
+.item-products {
+    width: 22%;
+    margin: 30px 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 0;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 10%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+}
+
 .header {
     background-color: bisque;
     padding: 20px 0;
@@ -65,7 +84,8 @@
                 }
 
             }
-            .admin{
+
+            .admin {
                 display: inline-block;
                 padding: 10px;
                 border: 1px solid;
@@ -95,6 +115,7 @@
     .swiper {
         width: 100%;
         padding-bottom: 50px;
+
         .swiper-wrapper {
             .swiper-slide {
                 background-position: cover;
@@ -150,6 +171,7 @@
         }
     }
 }
+
 .slide {
     margin: 30px 0;
 }
@@ -163,7 +185,7 @@
             border-radius: 10px;
             padding: 20px 0;
             box-shadow: 0 1px 2px 0 rgb(60 64 67 / 10%), 0 2px 6px 2px rgb(60 64 67 / 15%);
-            
+
             .card-img {
                 text-align: center;
 
@@ -189,21 +211,30 @@
                 align-items: center;
                 justify-content: center;
                 margin: 0 10px;
-                .buy{
+
+                .buy {
                     margin-right: 10px;
                     font-size: 13px;
-                    
+
                 }
-                .shopping-cart{
+
+                .shopping-cart {
                     font-size: 13px;
-                    
+
                 }
             }
         }
     }
 }
 
-.product{
+.show-all {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+
+}
+
+.product {
     padding: 50px 0;
 
     .container {
@@ -214,17 +245,20 @@
             padding: 10px 20px;
             border: 1px solid;
             border-radius: 10px;
-            .brand{
-                a{
+
+            .brand {
+                a {
                     text-decoration: none;
                     color: #915319;
                     margin: 10px;
                 }
-                :hover{
+
+                :hover {
                     color: #f5c89d;
                 }
             }
-            .show{
+
+            .show {
                 border: none;
                 background-color: #fff;
             }
@@ -232,26 +266,31 @@
     }
 }
 
-.footer{
+.footer {
     background-color: #ced4da;
     padding: 50px 0;
-    .container{
-        .row{
-            .fTLinks{
-               
-                .ft-head{
+
+    .container {
+        .row {
+            .fTLinks {
+
+                .ft-head {
                     color: #f28d7d;
                 }
-                .ft-ct{
-                    ul{
+
+                .ft-ct {
+                    ul {
                         list-style: none;
                         padding: 0;
-                        li{
-                            :hover{
+
+                        li {
+                            :hover {
                                 color: coral;
                             }
+
                             margin-top: 20px;
-                            a{
+
+                            a {
                                 text-decoration: none;
                                 color: #000
                             }
@@ -262,7 +301,8 @@
         }
     }
 }
+
 //der ta cho admin
-#tblDanhSachSP tr img{
+#tblDanhSachSP tr img {
     width: 200px;
 }

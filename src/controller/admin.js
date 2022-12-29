@@ -4,7 +4,7 @@ function createsProducts() {
   var id;
   var Name = document.getElementById("inputGroupSelect01").value;
   var price = document.getElementById("txtPrice").value;
-  var img = document.getElementById("txtImg").value;
+  var img = document.g3etElementById("txtImg").value;
   var type = document.getElementById("inputGroupSelect02").value;
   var info = document.getElementById("floatingTextarea2").value;
   var Product = new Products(id, Name, price, img, type, info);

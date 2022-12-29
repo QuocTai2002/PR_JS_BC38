@@ -123,6 +123,17 @@
             </div>
         </div>
     </section>
+
+    <!-- show tất cả sản phẩm -->
+    <section>
+        <div class="show-all">
+            <button class="btn btn-secondary"  onclick="renderProductsList()">Hiện thị tất cả sản phẩm</button>
+        </div>
+        <div class="container">
+            <div id="show-products" class="row "></div>
+        </div>
+    </section>
+
     <!-- bán chạy -->
     <section class="hot-sale">
         <div class="container">
@@ -280,7 +291,7 @@
                     <a href="#">Samsung</a>
                     <a href="#">Xiaomi</a>
                     <a href="#">Oppo</a>
-                    <button class="show" id="showMobile" onclick="renderMobile()">Xem tất cả
+                    <button class="show" id="showMobile" onclick="renderMobileList()"">Xem tất cả
                         <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
@@ -425,7 +436,7 @@
                 </div>
             </div>
 
-            <div id="show-mobile"></div>
+            <div id="show-products-mobile" class="row "></div>
 
         </div>
     </section>
@@ -439,7 +450,7 @@
                     <a href="#">Acer</a>
                     <a href="#">Asus</a>
                     <a href="#">Hp</a>
-                    <button class="show">Xem tất cả
+                    <button class="show" onclick="renderLaptopList()">Xem tất cả
                         <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
@@ -583,7 +594,7 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
-
+            <div id="show-products-laptop"" class="row "></div>
         </div>
     </section>
     <!-- đồng hồ -->
@@ -596,7 +607,7 @@
                     <a href="#">Samsung</a>
                     <a href="#">Xiaomi</a>
                     <a href="#">Huawei</a>
-                    <button class="show">Xem tất cả
+                    <button class="show" onclick="renderClockList()">Xem tất cả
                         <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
@@ -740,7 +751,7 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
-
+            <div id="show-products-clock"></div>
         </div>
     </section>
     <!-- Phụ kiện -->
@@ -915,6 +926,7 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
+            <div id="show-products-accessory"></div>
 
         </div>
     </section>
@@ -1103,7 +1115,7 @@
                     <a href="#">Samsung</a>
                     <a href="#">Xiaomi</a>
                     <a href="#">Huawei</a>
-                    <button class="show">Xem tất cả
+                    <button class="show" onclick="renderTabletList()">Xem tất cả
                         <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
@@ -1266,6 +1278,8 @@
                 </div>
             </div>
 
+            <div id="show-products-tablet"></div>
+
         </div>
     </section>
     <!-- PC -->
@@ -1278,7 +1292,7 @@
                     <a href="#">Linh Kiện Máy Tính</a>
                     <a href="#">Máy Tính All In One</a>
                     <a href="#">Máy Tính Đồng Bộ</a>
-                    <button class="show">Xem tất cả
+                    <button class="show" onclick="renderPcList()">Xem tất cả
                         <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
@@ -1440,7 +1454,7 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
-
+            <div id="show-products-pc"></div>
         </div>
     </section>
 

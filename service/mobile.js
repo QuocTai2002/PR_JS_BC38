@@ -1,7 +1,7 @@
-var mobileService = {
-    fetchMobile: function () {
+var productsService = {
+    fetchProduct: function () {
         return axios({
-          url: "https://6395f15c90ac47c6807877f9.mockapi.io/products",
+          url: "https://63960758a68e43e418f8d85c.mockapi.io/card",
           method: "GET",
         });
     },
