@@ -122,7 +122,7 @@ function findById(id) {
 
 //######## THANH TOÁN SẢN PHẨM #########
 function payment() {
-  saveLocal();
+ 
   cartList = [];
   Swal.fire({
     position: "center",
@@ -135,6 +135,7 @@ function payment() {
   document.getElementById("TxtAddr").value = "";
   document.getElementById("TxtNu").value = ""
   renderCart();
+  saveLocal();
 }
 // ####### LƯU DỮ LIỆU VÀO LOCAL ###########
 function saveLocal() {
@@ -158,12 +159,9 @@ function checkCart (){
   }
 }
 function deleteCart (id){
-  var cartListFormLocal = getLocal();
-  cartList = mapCartList(cartListFormLocal);
   for(i = 0; i < cartList.length;i++){
-    if(id = cartList.Product[i].id){
-      console.log(i);
-      cartList.splice(id,1)
+    if(id = cartList[i].Product.id){
+      cartList.splice(i,1)
       saveLocal();
       renderCart();
       return;
