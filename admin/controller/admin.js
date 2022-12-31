@@ -39,7 +39,6 @@ async function fetProductList() {
 }
 window.onload = async function () {
   await fetProductList();
-
 }
 function mapProductList(local) {
   var result = [];
@@ -78,7 +77,7 @@ function renderProduct() {
 }
 
 function deleteStudent(id) {
-  fetchProductList();
+  // fetchProductList();
   Swal.fire({
     title: "Are you sure?",
     text: "You won't be able to revert this!",
@@ -94,9 +93,9 @@ function deleteStudent(id) {
         method: "DELETE",
       })
       .then(function(res){
-        fetchStudentList();
+        fetProductList();
       })
-      .catch(function(){
+      .catch(function(res){
       });
       Swal.fire("Deleted!", "Your file has been deleted.", "success");
     }
