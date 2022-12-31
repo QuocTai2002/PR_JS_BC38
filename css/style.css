@@ -25,15 +25,19 @@
 }
 
 .header {
-  background-color: bisque;
+  background-color: #9f9f9f;
   padding: 20px 0;
 }
 .header .container .header-top {
   display: flex;
   align-items: center;
 }
-.header .container .header-top h1 {
+.header .container .header-top a {
+  text-decoration: none;
+}
+.header .container .header-top a h1 {
   font-size: 30px;
+  color: #f28d7d;
 }
 .header .container .header-top .search {
   margin-left: 20px;
@@ -73,15 +77,19 @@
 .header .container .header-top .user i {
   font-size: 20px;
 }
-.header .container .header-top .admin {
+.header .container .header-top .style_admin {
   display: inline-block;
   padding: 10px;
-  border: 1px solid;
-  border-radius: 50%;
+  background-color: white;
+  border-radius: 10px;
   margin-right: 20px;
 }
-.header .container .header-top .admin i {
+.header .container .header-top .style_admin span {
+  color: #000;
+}
+.header .container .header-top .style_admin i {
   font-size: 20px;
+  color: black;
 }
 .header .container .nav-bar {
   display: flex;
@@ -209,25 +217,47 @@
 }
 
 .footer {
-  background-color: #ced4da;
+  background-color: #f4f8fa;
   padding: 50px 0;
 }
 .footer .container .row .fTLinks .ft-head {
-  color: #f28d7d;
+  color: black;
+  border-bottom: #dc3545 4px solid;
 }
 .footer .container .row .fTLinks .ft-ct ul {
   list-style: none;
   padding: 0;
 }
 .footer .container .row .fTLinks .ft-ct ul li {
+  transition: all 0.3s;
   margin-top: 20px;
 }
-.footer .container .row .fTLinks .ft-ct ul li :hover {
-  color: coral;
-}
 .footer .container .row .fTLinks .ft-ct ul li a {
+  transition: all 0.3s;
   text-decoration: none;
   color: #000;
+}
+.footer .container .row .fTLinks .ft-ct ul li a:hover {
+  color: #f28d7d;
+  border-bottom: solid 1px #dc3545;
+}
+
+main .backHome {
+  text-align: center;
+  padding: 200px;
+}
+main .backHome h2 {
+  color: #f28d7d;
+  font-size: 25px;
+  display: inline;
+}
+main .backHome i {
+  color: rgb(68, 68, 119);
+  cursor: pointer;
+  font-size: 20px;
+}
+main .backHome i:hover {
+  color: blue;
 }
 
 #tblDanhSachSP tr img {
