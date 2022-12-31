@@ -13,16 +13,14 @@ async function fetchProductList() {
   } catch {
     alert("Không có dữ liệu");
   }
-  
 }
-window.onclick = function (){
-  fetchProductList();
-  console.log(productList);
-}
+// window.onclick = function (){
+//   fetchProductList();
+//   console.log(productList);
+// }
 
 
 function renderProductsList(data) {
-  
   data = data || productList;
 
   var html = "";
@@ -129,6 +127,7 @@ function renderAccessoryList(data) {
               `;
     }
   }
+  console.log(productList)
   document.getElementById("show-products-accessory").innerHTML = html;
 }
 function renderTabletList(data) {
@@ -211,3 +210,4 @@ function renderPcList(data) {
   }
   document.getElementById("show-products-pc").innerHTML = html;
 }
+
