@@ -55,19 +55,12 @@ function renderCart() {
   document.getElementById("thsp").innerHTML = cartList.length + " Sản phẩm";
   document.getElementById("tbGioHang").innerHTML = html;
 }
-
 // ######### RENDER CART TRỐNG ########
 function renderEmptyCart() {
   document.getElementById("backHome").innerHTML = ` 
     <h2>Chưa có Sản phẩm trong giỏ hàng quay lại mua sắm </h2>
     <a href="../index.html"><i class="fa fa-home"> Home</i></a>`;
 }
-window.onload = function (){
-  renderCart();
- 
-}
-function demo() {
-  // document.getElementById("TableContainer").innerHTML = "tai";
-}
-demo();
+
+
 
