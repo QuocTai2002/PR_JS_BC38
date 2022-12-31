@@ -14,7 +14,11 @@ async function fetchProductList() {
     alert("Không có dữ liệu");
   }
 }
-fetchProductList();
+window.onclick = function (){
+  fetchProductList();
+  console.log(productList);
+}
+
 
 function renderProductsList(data) {
   data = data || productList;
@@ -33,7 +37,7 @@ function renderProductsList(data) {
                           }</div>
                           <div class="spacing-btn mt-3">
                           <button class="buy btn btn-light text-center"> Mua ngay </button>
-                          <button class="shopping-cart btn btn-light text-center ">Thêm vào giỏ</button>
+                          <button class="shopping-cart btn btn-light text-center" onclick="addCart(${data[i].id})">Thêm vào giỏ</button>
                           </div>
                           <div class="mt-3">${data[i].info}</div>
                           <div></div>
@@ -154,7 +158,6 @@ function renderTabletList(data) {
 }
 function renderLaptopList(data) {
   data = data || productList;
-
   var html = "";
   for (var i = 0; i < data.length; i++) {
     if (data[i].name === "laptop") {
@@ -169,7 +172,7 @@ function renderLaptopList(data) {
                           }</div>
                           <div class="spacing-btn mt-3">
                           <button class="buy btn btn-light text-center"> Mua ngay </button>
-                          <button class="shopping-cart btn btn-light text-center ">Thêm vào giỏ</button>
+                          <button class="shopping-cart btn btn-light text-center  onclick="addCart(${data[i].id})" ">Thêm vào giỏ</button>
                           </div>
                           <div class="mt-3">${data[i].info}</div>
                           <div></div>

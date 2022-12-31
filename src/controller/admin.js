@@ -1,5 +1,4 @@
 var ProductList = [];
-
 function createsProducts() {
   var id;
   var Name = document.getElementById("inputGroupSelect01").value;
@@ -28,6 +27,7 @@ function fetchStudentList() {
   })
     .then(function (res) {
       ProductList = mapStaffList(res.data);
+      console.log(ProductList);
       renderStudent();
     })
     .catch(function (err) {
@@ -54,6 +54,7 @@ function mapStaffList(local) {
 
 window.onload = function () {
   fetchStudentList();
+  console.log(ProductList);
 };
 function deleteStudent(id) {
   

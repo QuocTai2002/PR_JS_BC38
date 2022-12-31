@@ -25,17 +25,21 @@
 }
 
 .header {
-    background-color: bisque;
+    background-color: #9f9f9f;
     padding: 20px 0;
 
     .container {
         .header-top {
             display: flex;
             align-items: center;
-
+          a{
+            text-decoration: none;
             h1 {
                 font-size: 30px;
+                color: #f28d7d;
             }
+          }
+           
 
             .search {
                 margin-left: 20px;
@@ -85,15 +89,20 @@
 
             }
 
-            .admin {
+            .style_admin {
                 display: inline-block;
                 padding: 10px;
-                border: 1px solid;
-                border-radius: 50%;
+                background-color: white;
+                // border-radius: 50%;
+              border-radius: 10px;
                 margin-right: 20px;
-
+               
+                span{
+                    color: #000;
+                }
                 i {
                     font-size: 20px;
+                    color: black
                 }
             }
         }
@@ -267,7 +276,7 @@
 }
 
 .footer {
-    background-color: #ced4da;
+    background-color: #f4f8fa;
     padding: 50px 0;
 
     .container {
@@ -275,7 +284,8 @@
             .fTLinks {
 
                 .ft-head {
-                    color: #f28d7d;
+                    color: black;
+                    border-bottom: #dc3545 4px solid;
                 }
 
                 .ft-ct {
@@ -284,15 +294,20 @@
                         padding: 0;
 
                         li {
-                            :hover {
-                                color: coral;
-                            }
+                            transition: all .3s ;
+                            
 
                             margin-top: 20px;
 
                             a {
+                                &:hover{
+                                    color: #f28d7d;
+                                    border-bottom: solid 1px #dc3545;
+                                }
+                                transition: all .3s ;
                                 text-decoration: none;
                                 color: #000
+                               
                             }
                         }
                     }
@@ -301,7 +316,25 @@
         }
     }
 }
-
+ main {
+    .backHome{
+        text-align: center;
+        padding: 200px;
+        h2{
+            color: #f28d7d;
+            font-size: 25px;
+            display: inline;
+        }
+        i{
+            color: rgb(68, 68, 119);
+            cursor: pointer;
+            font-size: 20px;
+            &:hover{
+                color: blue;
+            }
+        }
+    }
+ }
 //der ta cho admin
 #tblDanhSachSP tr img {
     width: 200px;
