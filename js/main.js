@@ -13,12 +13,10 @@ async function fetchProductList() {
   } catch {
     alert("Không có dữ liệu");
   }
-  
 }
 fetchProductList();
 
 function renderProductsList(data) {
-  
   data = data || productList;
 
   var html = "";
@@ -208,3 +206,4 @@ function renderPcList(data) {
   }
   document.getElementById("show-products-pc").innerHTML = html;
 }
+
