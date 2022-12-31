@@ -1,6 +1,6 @@
 // ######## RENDER SẢN PHẨM ########
 function renderCart() {
-  if (!checkCart()) return;
+  checkCart ();
   var tableMain = `
   <table class="table">
           <thead>
@@ -32,9 +32,10 @@ function renderCart() {
         </table>`;
   document.getElementById("TableContainer").innerHTML = tableMain;
   var html = "";
+  var totalMoney = 0
   for (i = 0; i < cartList.length; i++) {
     var money = +cartList[i].Product.price * cartList[i].quantity;
-    totalMoney += money;
+   totalMoney += money;
     html += `<tr>
                 <td><img src="${cartList[i].Product.img}" alt=""></td>
                 <td><b>${cartList[i].Product.name} ${cartList[i].Product.type}:</b> ${cartList[i].Product.info}</td>
@@ -47,9 +48,10 @@ function renderCart() {
                 <i class="las la-minus" ></i></button>
                  </td>
                 <td>${money}đ</td>
-                <td> <button class=" btn btn-danger"  onclick="demo(${cartList[i].Product.id})">Xóa <i class="fa fa-trash-alt"></i></button></td>
+                <td> <button class=" btn btn-danger"  onclick="deleteCart (${cartList[i].Product.id})">Xóa <i class="fa fa-trash-alt"></i></button></td>
             </tr> `;
   }
+ 
   document.getElementById("sumPay").innerHTML = totalMoney + " Đ";
   document.getElementById("total").innerHTML = totalMoney + " Đ";
   document.getElementById("thsp").innerHTML = cartList.length + " Sản phẩm";
@@ -61,6 +63,30 @@ function renderEmptyCart() {
     <h2>Chưa có Sản phẩm trong giỏ hàng quay lại mua sắm </h2>
     <a href="../index.html"><i class="fa fa-home"> Home</i></a>`;
 }
-
+// ######## RENDER HOME ##########
+function renderProductsList() {
+  
+  var html = "";
+  for (var i = 0; i < ProductList.length; i++) {
+    html += `
+                    <div class="col-3 row justify-content-center item-products">
+                          <div>${`<img src ="${ ProductList[i].img}" class="img">`}</div>
+                          <div class="fs-3 text-danger  text-center mt-3">${
+                            ProductList[i].name
+                          }</div>
+                          <div class="fs-4  text-center mt-3">${
+                            ProductList[i].price + "đ"
+                          }</div>
+                          <div class="spacing-btn mt-3">
+                          <button class="buy btn btn-light text-center"> Mua ngay </button>
+                          <button class="shopping-cart btn btn-light text-center" onclick="addCart(${ ProductList[i].id})">Thêm vào giỏ</button>
+                          </div>
+                          <div class="mt-3">${ ProductList[i].info}</div>
+                          <div></div>
+                    </div>
+              `;
+  }
+  document.getElementById("show-products").innerHTML = html;
+}
 
 

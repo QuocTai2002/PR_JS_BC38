@@ -1,5 +1,4 @@
-var ProductList = []
-
+var ProductList = [];
 function Products (id,name,price,img,type,info) {
   this.id = id;
   this.name = name;
@@ -8,21 +7,18 @@ function Products (id,name,price,img,type,info) {
   this.type = type; 
   this.info = info;
 };
-function fetchProductList (){
-  axios({
-    url: "https://63960758a68e43e418f8d85c.mockapi.io/card",
-    method: "GET",
-  })
-    .then(function (res) {
-      ProductList = mapStaffList(res.data);
-      console.log(ProductList);
-      renderCart();
-    })
-    .catch(function (err) {
-      console.log("err", err);
-    });
+async function fetProductList() {
+  // call api backend => studentList
+  var promise = studentService.fetchStudents();
+  try { 
+    var res = await promise;
+    ProductList = mapProductList(res.data);
+   
+  } catch (err) {
+    console.log(err);
+  }
 }
-function mapStaffList(local) {
+function mapProductList(local) {
   var result = [];
   for (i = 0; i < local.length; i++) {
     var oldStaff = local[i];
@@ -40,8 +36,8 @@ function mapStaffList(local) {
 }
 
 // #### onload #####
-window.onload =  function () {
-  fetchProductList ()
+window.onload = async function () {
+  await fetProductList();
   var cartListFormLocal = getLocal();
   cartList = mapCartList(cartListFormLocal);
   renderCart();
@@ -123,8 +119,8 @@ function findById(id) {
   }
   return -1;
 }
-//######## THANH TOÁN SẢN PHẨM #########
 
+//######## THANH TOÁN SẢN PHẨM #########
 function payment() {
   saveLocal();
   cartList = [];
@@ -155,7 +151,25 @@ function getLocal() {
 } 
 // ###### KIỂM TRA MÃNG TRONG GIỎ HÀNG ###########
 function checkCart (){
-  if(!cartList);
-  document.getElementById("backHome").classList.add("backHome");
-  renderEmptyCart();
+  if(!cartList){
+    console.log("sai");
+    document.getElementById("backHome").classList.add("backHome");
+    renderEmptyCart();
+  }
 }
+function deleteCart (id){
+  var cartListFormLocal = getLocal();
+  cartList = mapCartList(cartListFormLocal);
+  for(i = 0; i < cartList.length;i++){
+    if(id = cartList.Product[i].id){
+      console.log(i);
+      cartList.splice(id,1)
+      saveLocal();
+      renderCart();
+      return;
+    }
+  }
+
+}
+
+

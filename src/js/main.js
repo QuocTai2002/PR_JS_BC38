@@ -3,10 +3,7 @@ var productList = [];
 
 // call
 async function fetchProductList() {
-  productList = [];
-
-  var promise = productsService.fetchProduct();
-
+var promise = productsService.fetchProduct();
   try {
     var data = await promise;
     productList = data.data;
@@ -14,15 +11,13 @@ async function fetchProductList() {
     alert("Không có dữ liệu");
   }
 }
-// window.onclick = function (){
-//   fetchProductList();
-//   console.log(productList);
-// }
+window.onclick = function (){
+  fetchProductList();
+}
 
 
 function renderProductsList(data) {
   data = data || productList;
-
   var html = "";
 
   for (var i = 0; i < data.length; i++) {

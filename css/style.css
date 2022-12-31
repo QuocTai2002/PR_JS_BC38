@@ -263,3 +263,7 @@ main .backHome i:hover {
 #tblDanhSachSP tr img {
   width: 200px;
 }
+
+main .table tbody tr img {
+  width: 200px;
+}
